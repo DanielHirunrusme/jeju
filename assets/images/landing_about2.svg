@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 540 478.9" style="enable-background:new 0 0 540 478.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'Gotham-Book';}
+	.st3{font-size:40px;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="240.55" x2="540" y2="240.55" gradientTransform="matrix(1 0 0 -1 0 480)">
+	<stop  offset="0" style="stop-color:#FF96D5"/>
+	<stop  offset="0.2977" style="stop-color:#FF96D5"/>
+	<stop  offset="0.4058" style="stop-color:#FF97CE"/>
+	<stop  offset="0.5679" style="stop-color:#FF98B9"/>
+	<stop  offset="0.7636" style="stop-color:#FF9A98"/>
+	<stop  offset="0.9595" style="stop-color:#FF9D6F"/>
+	<stop  offset="1" style="stop-color:#FF9D6F"/>
+</linearGradient>
+<polygon class="st0" points="0.5,0 0,478.9 540,0 "/>
+<text transform="matrix(1 0 0 1 43.0961 62.9394)" class="st1 st2 st3">About</text>
+</svg>

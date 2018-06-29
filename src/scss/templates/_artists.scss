@@ -1,0 +1,84 @@
+.artist-article {
+  transition: 0s max-height;
+  margin: 0;
+  padding-bottom: 0;
+  max-height: 8.5vw;
+  overflow: hidden;
+  padding-left: 0;
+  padding-right: 0;
+  
+  
+  
+  .inner {
+    @include gutter-padding-left(1);
+    @include gutter-padding-right(1);
+  }
+  
+  @include break(mobile){
+    max-height: 12.5vw;
+    &:last-child {
+      @include border-bottom;
+    }
+    .location {
+      display: none;
+    }
+  }
+  
+  .artist & {
+    max-height: 100%;
+  }
+  
+  &.visible {
+    padding-bottom: 0;
+    //border-bottom: none;
+    max-height: 400vw;
+    .section {
+      //border-bottom: none;
+    }
+  }
+  
+  iframe {
+    @include break(mobile){
+      height: auto;
+    }
+  }
+  
+  .article-title {
+    @include gutter-padding-bottom(1);
+  }
+  .section {
+    @include border-top;
+  }
+  .accordion-trigger {
+    margin: 0;
+    width:100%;
+    @include break(mobile){
+      text-align: center;
+    }
+  }
+  &.visible {
+    &:last-child {
+      //border-bottom: none;
+    }
+    .location {
+      display: block;
+    }
+    .accordion-trigger {
+      @include break(mobile){
+        text-align: left;
+      }
+    }
+  }
+  .inner {
+    //@include gutter-all;
+    @include gutter-padding-bottom(0);
+  }
+  .accordion-body {
+    //display: none;
+    //margin-top: 1em;
+    border-bottom: none;
+    .inner {
+      @include gutter-padding-bottom(1);
+    }
+  }
+}

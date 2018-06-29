@@ -1,0 +1,102 @@
+title: Artist
+
+pages: false
+
+files: true
+  fields:
+    caption:
+      label: Caption
+      type:  title
+    
+
+fields:
+  title:
+    label: Title
+    type:  title
+    
+  lives:
+    label: Lives
+    type: text
+    width: 1/2
+    
+  born:
+    label: Born
+    type: text
+    width: 1/2
+  
+  website:
+    label: Website
+    type: text
+  
+  text:
+    label: Text
+    type: textarea
+  
+  builder:
+    label: Sections
+    type: builder
+    fieldsets:
+      slideshow:
+        label: Slideshow
+        snippet: sections/slideshow
+        fields:
+          picture_1:
+            label: Background Image
+            type: image
+          text_1:
+            label: Headline Text
+            type: text
+          picture_2:
+            label: Background Image
+            type: image
+          text_2:
+            label: Headline Text
+            type: text
+          picture_3:
+            label: Background Image
+            type: image
+          text_3:
+            label: Headline Text
+            type: text
+          picture_4:
+            label: Background Image
+            type: image
+          text_4:
+            label: Headline Text
+            type: text
+          picture_5:
+            label: Background Image
+            type: image
+          text_5:
+            label: Headline Text
+            type: text
+          picture_6:
+            label: Background Image
+            type: image
+          text_6:
+            label: Headline Text
+            type: text
+          picture_7:
+            label: Background Image
+            type: image
+          text_7:
+            label: Headline Text
+            type: text
+          picture_8:
+            label: Background Image
+            type: image
+          text_8:
+            label: Headline Text
+            type: text
+          picture_9:
+            label: Background Image
+            type: image
+          text_9:
+            label: Headline Text
+            type: text
+          picture_10:
+            label: Background Image
+            type: image
+          text_10:
+            label: Headline Text
+            type: text

@@ -1,0 +1,33 @@
+title: Map
+
+files: true
+
+pages: false
+
+options: 
+  template: false
+
+fields:
+  builder:
+    label: Events
+    type: builder
+    fieldsets:
+      event:
+        label: Marker
+        snippet: sections/marker
+        fields:
+          title:
+            label: Title
+            type: text
+          latitude:
+            label: Latitude
+            type: text
+          longitude:
+            label: Longitude
+            type: text
+          image:
+            label: Image
+            type: image
+          text:
+            label: Description
+            type: textarea

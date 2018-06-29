@@ -1,0 +1,45 @@
+title: Event
+
+pages: false
+
+fields:
+  title:
+    label: Title
+    type: title
+    required: true
+    width: 3/4
+    
+  date:
+    label: Date
+    type: date
+    require: true
+    width: 1/4
+    
+  builder:
+    label: Events
+    type: builder
+    fieldsets:
+      event:
+        label: Event
+        snippet: sections/event
+        fields:
+          title:
+            label: Title
+            type: text
+          location:
+            label: Location
+            type: text
+          time:
+            label: Time
+            type: text
+          date:
+            icon: calendar
+            label: Date
+            type: date
+            format: LL
+            placeholder: Select a date…
+            default: today
+            required: true
+          text:
+            label: Description
+            type: textarea

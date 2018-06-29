@@ -1,0 +1,185 @@
+title: Page
+
+pages: false
+files: true
+  
+fields:
+  
+  builder:
+    label: Sections
+    type: builder
+    fieldsets:
+      bodyText:
+        label: Body Text
+        snippet: sections/bodyText
+        fields:
+          text:
+            label: text
+            type: textarea
+      imageBanner:
+        label: Image Banner
+        snippet: sections/imagebanner
+        fields:
+          picture:
+            label: Background Image
+            type: image
+          text:
+            label: Headline Text
+            type: text
+      header:
+        label: Header
+        snippet: sections/header
+        fields:
+          text:
+            label: Headline Text
+            type: text
+      slideshow:
+        label: Slideshow
+        snippet: sections/slideshow
+        fields:
+          picture_1:
+            label: Background Image
+            type: image
+          text_1:
+            label: Headline Text
+            type: text
+          picture_2:
+            label: Background Image
+            type: image
+          text_2:
+            label: Headline Text
+            type: text
+          picture_3:
+            label: Background Image
+            type: image
+          text_3:
+            label: Headline Text
+            type: text
+          picture_4:
+            label: Background Image
+            type: image
+          text_4:
+            label: Headline Text
+            type: text
+          picture_5:
+            label: Background Image
+            type: image
+          text_5:
+            label: Headline Text
+            type: text
+          picture_6:
+            label: Background Image
+            type: image
+          text_6:
+            label: Headline Text
+            type: text
+          picture_7:
+            label: Background Image
+            type: image
+          text_7:
+            label: Headline Text
+            type: text
+          picture_8:
+            label: Background Image
+            type: image
+          text_8:
+            label: Headline Text
+            type: text
+          picture_9:
+            label: Background Image
+            type: image
+          text_9:
+            label: Headline Text
+            type: text
+          picture_10:
+            label: Background Image
+            type: image
+          text_10:
+            label: Headline Text
+            type: text
+      slideshow_text_module:
+        label: Slideshow with Text Module
+        snippet: sections/slideshow_text_module
+        fields:
+          picture_1:
+            label: Background Image
+            type: image
+          text_1:
+            label: Headline Text
+            type: wysiwyg
+          picture_2:
+            label: Background Image
+            type: image
+          text_2:
+            label: Headline Text
+            type: wysiwyg
+          picture_3:
+            label: Background Image
+            type: image
+          text_3:
+            label: Headline Text
+            type: wysiwyg
+          picture_4:
+            label: Background Image
+            type: image
+          text_4:
+            label: Headline Text
+            type: wysiwyg
+          picture_5:
+            label: Background Image
+            type: image
+          text_5:
+            label: Headline Text
+            type: wysiwyg
+          picture_6:
+            label: Background Image
+            type: image
+          text_6:
+            label: Headline Text
+            type: wysiwyg
+          picture_7:
+            label: Background Image
+            type: image
+          text_7:
+            label: Headline Text
+            type: wysiwyg
+          picture_8:
+            label: Background Image
+            type: image
+          text_8:
+            label: Headline Text
+            type: wysiwyg
+          picture_9:
+            label: Background Image
+            type: image
+          text_9:
+            label: Headline Text
+            type: wysiwyg
+          picture_10:
+            label: Background Image
+            type: image
+          text_10:
+            label: Headline Text
+            type: wysiwyg
+      quote:
+        label: Quote
+        snippet: sections/quote
+        fields:
+          text:
+            label: Quote Text
+            type: textarea
+          citation:
+            label: Citation
+            type: text
+            
+  faq:
+    label: FAQ
+    type: structure
+    style: table
+    fields: 
+      question: 
+        label: Question
+        type: textarea
+      answer: 
+        label: Answer
+        type: textarea

@@ -1,0 +1,29 @@
+#about {
+  .bodyText {
+    //column-count: 2;
+  }
+  .faq-list {
+    //column-count: 2;
+    ul {
+      //@include flexbox;
+      //@include flex-wrap(wrap);
+      //@include justify-content(space-between);
+      column-count: 2;
+      column-gap: 2em;
+      @include break(mobile){
+        column-count: 1;
+      }
+      li {
+        //width: 45%;
+        em {
+          padding-bottom: 1em;
+          display: block;
+        }
+        blockquote {
+          margin-bottom: 2em;
+        }
+      }
+    }
+  }
+}
+

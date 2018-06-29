@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 720 479.1" style="enable-background:new 0 0 720 479.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);fill:url(#SVGID_3_);}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'Gotham-Book';}
+	.st3{font-size:40px;}
+</style>
+<g>
+	<g>
+		<defs>
+			<polygon id="SVGID_1_" points="479,0.9 479,161.9 239,161.9 -1,161.9 -1,321 -1,480 239,480 479,480 719,480 719,0.9 			"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		
+			<radialGradient id="SVGID_3_" cx="346.0056" cy="-0.6414" r="1" gradientTransform="matrix(0 -360 541.0211 0 706.0077 124802.4531)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#FF0000"/>
+			<stop  offset="8.586360e-02" style="stop-color:#FF0000"/>
+			<stop  offset="9.415607e-02" style="stop-color:#FA0002"/>
+			<stop  offset="0.1747" style="stop-color:#CD0016"/>
+			<stop  offset="0.2521" style="stop-color:#A90025"/>
+			<stop  offset="0.3244" style="stop-color:#900030"/>
+			<stop  offset="0.3898" style="stop-color:#800037"/>
+			<stop  offset="0.4421" style="stop-color:#7B0039"/>
+			<stop  offset="0.5314" style="stop-color:#5F002C"/>
+			<stop  offset="0.7237" style="stop-color:#16000A"/>
+			<stop  offset="0.7803" style="stop-color:#000000"/>
+			<stop  offset="1" style="stop-color:#000000"/>
+		</radialGradient>
+		<rect x="-1" y="0.9" class="st0" width="720" height="479.1"/>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 561.666 430.4739)" class="st1 st2 st3">P</text>
+<text transform="matrix(1 0 0 1 588.366 430.4739)" class="st1 st2 st3">r</text>
+<text transform="matrix(1 0 0 1 603.666 430.4739)" class="st1 st2 st3">e</text>
+<text transform="matrix(1 0 0 1 627.366 430.4739)" class="st1 st2 st3">s</text>
+<text transform="matrix(1 0 0 1 646.966 430.4739)" class="st1 st2 st3">s</text>
+</svg>

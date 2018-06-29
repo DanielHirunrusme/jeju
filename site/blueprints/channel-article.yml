@@ -1,0 +1,24 @@
+title: Channel Item
+
+pages: false
+
+fields:
+  title:
+    label: Title
+    type:  title
+    
+  coverimage:
+    label: Cover Image
+    type: image
+  
+  video_embed:
+    label: Vimeo Embed
+    type: textarea
+  
+  caption:
+    label: Caption
+    type: textarea
+    
+  tags:
+      label: Tags
+      type: tags

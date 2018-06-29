@@ -1,0 +1,511 @@
+#main-menu {
+  @include main-nav;
+  z-index: 4;
+  margin-left: -3px;
+  //background: #000;
+  display: none;
+  #home & {
+    display: block;
+  }
+  #home.show-channel & {
+    display: none;
+  }
+  @include break(mobile){
+    display: none !important;
+  }
+  svg {
+    width: calc(100% + 5px);
+    height: auto;
+    margin-left: -6px;
+    shape-rendering: crispEdges;
+    * {
+      shape-rendering: crispEdges;
+    }
+    polygon {
+      stroke: #fff;
+      stroke-width: 3px;
+    }
+    text {
+      
+      @include no-select;
+      pointer-events: none;
+    }
+    polygon, rect {
+      cursor: pointer;
+      &:hover {
+        //fill: red;
+        polygon {
+         //fill: red; 
+        }
+      }
+    }
+  }
+  
+  
+  
+  
+  .svg-container {
+    position: absolute;
+    svg {
+      width: 100%;
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+    &.third {
+      width: 37%;
+    }
+    &.large {
+      width: 63%; 
+    }
+    
+  }
+}
+
+text {
+  @include no-select;
+  pointer-events: none;
+  letter-spacing: -.05em;
+}
+
+#artists-main, #artists-side {
+  &:hover, &.active {
+    text {
+      position: relative;
+      z-index: 1;
+      mix-blend-mode: difference;
+    }
+  }
+}
+
+/* Hover states */
+
+#artists-main {
+  polygon:hover {
+    fill: url(#artists-gradient);
+  }
+  &.active {
+    polygon {
+      fill: url(#artists-gradient);
+    }
+  }
+}
+
+#artists-side {
+  polygon:hover {
+    fill: url(#artists-side-gradient);
+  }
+  &.active {
+    polygon {
+      fill: url(#artists-side-gradient);
+    }
+  }
+}
+
+#about-main {
+  polygon:hover {
+    fill: url(#about-gradient);
+  }
+}
+
+#about-side {
+  polygon:hover {
+    fill: url(#about-side-gradient);
+  }
+  &.active {
+    polygon {
+      fill: url(#about-side-gradient);
+    }
+  }
+}
+
+#visit-main {
+  polygon:hover {
+    fill: url(#visit-gradient);
+  }
+}
+
+#visit-side {
+  path:hover {
+    fill: url(#visit-side-gradient);
+  }
+  &.active {
+    path {
+      fill: url(#visit-side-gradient);
+    }
+  }
+}
+
+#events-main {
+  polygon:hover {
+    fill: url(#events-gradient);
+  }
+}
+
+#events-side {
+  polygon:hover {
+    fill: url(#events-side-gradient);
+  }
+  &.active {
+    polygon {
+      fill: url(#events-side-gradient);
+    }
+  }
+}
+
+#limo-main {
+  rect:hover {
+    fill: url(#limo-gradient);
+  }
+}
+
+#limo-side {
+  rect:hover {
+    fill: url(#limo-side-gradient);
+  }
+  &.active {
+    rect {
+      fill: url(#limo-side-gradient);
+    }
+  }
+}
+
+#tickets-main {
+  polygon:hover {
+    fill: url(#ticket-gradient);
+  }
+}
+
+#tickets-side {
+  polygon:hover {
+    fill: url(#ticket-side-gradient);
+  }
+  &.active {
+    polygon {
+      fill: url(#tickets-side-gradient);
+    }
+  }
+}
+
+#news-main {
+  polygon:hover {
+    fill: url(#news-gradient);
+  }
+}
+
+#news-side {
+  polygon:hover {
+    fill: url(#news-side-gradient);
+  }
+  &.active {
+    polygon {
+      fill: url(#news-side-gradient);
+    }
+  }
+}
+
+#channel-main {
+  &:hover {
+    polygon {
+      fill: transparent;
+    }
+  }
+  polgyon:hover {
+    fill: red;
+  }
+}
+
+#calendar-main {
+  rect:hover {
+    fill: url(#calendar-gradient);
+  }
+}
+
+#calendar-side {
+  rect:hover {
+    fill: url(#calendar-side-gradient);
+  }
+  &.active {
+    rect {
+      fill: url(#calendar-side-gradient);
+    }
+  }
+}
+
+#tickets-main {
+  rect:hover {
+    fill: url(#tickets-gradient);
+  }
+}
+
+#tickets-side {
+  rect:hover {
+    fill: url(#tickets-side-gradient);
+  }
+  &.active {
+    rect {
+      fill: url(#tickets-side-gradient);
+    }
+  }
+}
+
+#press-main {
+  polygon:hover {
+    fill: url(#press-gradient);
+  }
+}
+
+#press-side {
+  polygon:hover {
+    fill: url(#press-side-gradient);
+  }
+  &.active {
+    polygon {
+      fill: url(#press-side-gradient);
+    }
+  }
+}
+
+#channel-side {
+  &:hover, &.active {
+    fill: transparent;
+    polygon {
+      fill: transparent;
+    }
+  }
+}
+
+#RightNav {
+  @include flexbox;
+  @include align-items(center);
+}
+
+#top-menu {
+  @include nav;
+  background: url(images/static.gif) repeat 0 0;
+  background-size: contain;
+  &:hover {
+    cursor: url(images/arrow-down.png), auto;
+  }
+  .show-channel & {
+    display: none;
+  }
+  .menu-svg {
+    
+    margin-left:-5px;
+    margin-right:-5px;
+    //margin-bottom: -3px;
+    svg {
+      width: 100%;
+      height: auto;
+      //margin-top: 6px;
+    }
+  }
+  
+  .menu {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    
+    @include break(mobile) {
+      padding-top: 6rem;
+    }
+  }
+  ul {
+    
+    
+    @include break(mobile) {
+      display: block;
+    }
+    
+    li {
+      //display: inline-block;
+      @include break(mobile) {
+        display: block;
+      }
+      a {
+        text-transform: uppercase;
+        padding: 1rem;
+        display: block;
+        margin-top: -.2rem;
+        padding-bottom: 0;
+        @include break(mobile) {
+         margin-top: 0; 
+        }
+        .fab {
+          font-size: 1.25rem;
+          @include break(mobile) {
+            font-size: 1.35rem;
+          }
+        }
+        svg {
+          width: 22px;
+          height: 22px;
+          position: relative;
+          top: 0px;
+          @include break(tablet) {
+            width: 20px;
+            height: 20px;
+          }
+          @include break(mobile) {
+            height: 1.25em;
+            width: 1.25em;
+            
+            top: .25rem;
+          }
+        }
+        @include break(mobile) {
+          padding-top: 0;
+          padding-bottom: .5rem;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+.hamburger {
+  display: none;
+  align-items: center;
+  width: 60px;
+  height: 100px;
+  margin: 0 auto;
+  position: fixed;
+  top: 2.2rem;
+  right: 0rem;
+  transform: translateY(-50%);
+  z-index: 99999;
+  @include break(mobile) {
+    display: flex;
+  }
+}
+
+.hamburger:hover {
+ 
+}
+
+.bars,
+.bars:before, 
+.bars:after {
+  position: relative;
+  width: 22px;
+  height: 2px;
+  margin: 0 auto;
+  background: #ecf0f1;
+  transition: top .2s .2s,
+    transform .2s,
+    background 0 .2s;
+}
+
+.bars:before,
+.bars:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.bars:before {
+  top: -8px;
+}
+
+.bars:after {
+  top: 8px;
+}
+
+.active .bars:before,
+.active .bars:after {
+  transition: top .2s,
+    transform .2s .2s;
+  top: 0;
+}
+
+.active .bars {
+  background: transparent;
+}
+
+.active .bars:before {
+  transform: rotate(45deg);
+}
+
+.active .bars:after {
+  transform: rotate(-45deg);
+}
+
+.menu {
+  li {
+    position: absolute;
+  }
+  a {
+    @extend %h1;
+  }
+}
+
+.artists-link {
+  position: absolute;
+  right: 1em;
+  top: 15.4vw;
+}
+
+.visit-link,
+.artists-link,
+.news-link,
+.press-link,
+.blog-link
+{
+  right: 1em;
+}
+
+.about-link,
+.events-link,
+.channel-link,
+.tickets-link
+{
+  left: .5em;
+}
+
+.about-link {
+  top: 22vw;
+}
+
+.limo-limo-link {
+  right: 1.9em;
+}
+
+.channel-link {
+  top: 82.5vw;
+}
+
+.blog-link {
+  top: 110.5vw;
+}
+
+.calendar-link {
+  top: 118vw;
+  width: $desktop-nav-width;
+  text-align: center;
+}
+
+.tickets-link {
+  top: 125.5vw;
+}
+
+.press-link {
+  top: 139vw;
+}
+
+.events-link {
+  top: 56.5vw;
+}
+
+.limo-limo-link {
+  top: 70vw;
+}
+
+.visit-link {
+  top: 49vw;
+}

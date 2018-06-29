@@ -1,0 +1,51 @@
+main {
+  margin-left: $desktop-nav-width;
+  margin-top: $desktop-header-height;
+  position: relative;
+  z-index: 2;
+  background: #000;
+  min-height: calc(100% - #{$desktop-header-height});
+  @include touch;
+  @include break(mobile){
+    margin-left: 0;
+    margin-top: $mobile-header-height;
+    overflow-y: visible;
+  }
+  &.events, &.channel {
+    section {
+      margin-left: $desktop-aside-width;
+      @include break(mobile){
+        margin-left: 0;
+      }
+    }
+    
+    aside {
+      //display: block;
+    }
+  }
+  
+  a {
+    &:hover {
+      //font-style: italic;
+    }
+  }
+  
+  
+  
+  aside {
+    //display: none;
+    @include aside;
+    ul {
+      
+      
+      li {
+        a {
+          @extend %h1;
+          &:hover {
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 578.1 447" style="enable-background:new 0 0 578.1 447;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);fill:url(#SVGID_3_);}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'Gotham-Book';}
+	.st3{font-size:40px;}
+	.st4{letter-spacing:-1;}
+</style>
+<g>
+	<defs>
+		<polygon id="SVGID_1_" points="578.1,0 578.1,1 274.1,1 274.1,225 0,225 0,447 578.1,447 		"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	
+		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-138.6598" y1="741.795" x2="-137.6598" y2="741.795" gradientTransform="matrix(578.1 0 0 -578.1 80159.2031 429055.1562)">
+		<stop  offset="0" style="stop-color:#FFFF00"/>
+		<stop  offset="0.3173" style="stop-color:#FFFF00"/>
+		<stop  offset="0.3895" style="stop-color:#FFEF08"/>
+		<stop  offset="0.5307" style="stop-color:#FFC51D"/>
+		<stop  offset="0.7249" style="stop-color:#FF823E"/>
+		<stop  offset="0.8706" style="stop-color:#FF4C59"/>
+		<stop  offset="1" style="stop-color:#FF4C59"/>
+	</linearGradient>
+	<rect y="0" class="st0" width="578.1" height="447"/>
+</g>
+<text transform="matrix(1 0 0 1 423.0762 67)"><tspan x="0" y="0" class="st1 st2 st3">N</tspan><tspan x="31.6" y="0" class="st1 st2 st3 st4">e</tspan><tspan x="54.3" y="0" class="st1 st2 st3">w</tspan><tspan x="88.2" y="0" class="st1 st2 st3">s</tspan></text>
+</svg>

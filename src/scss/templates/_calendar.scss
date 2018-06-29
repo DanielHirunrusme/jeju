@@ -1,0 +1,120 @@
+.event {
+  .event-header {
+    
+  }
+  .event-body {
+    margin-top: 1em;
+    @include gutter-padding-left(1.5);
+  }
+}
+
+#datepicker {
+  @include border-bottom;
+  @include gutter-padding-left(1);
+  @include gutter-padding-right(1);
+  @include gutter-padding-top(1);
+  @include gutter-padding-bottom(1);
+  .ui-datepicker-calendar {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.ui-datepicker-next, .ui-datepicker-prev {
+  cursor: pointer;
+  @include no-select;
+  float: right;
+  margin-left: 1em;
+}
+
+.ui-datepicker-title {
+  margin-bottom: 1em;
+  span {
+  	@include font-size($h1-font-sizes); 
+  	@include line-height($h1-line-height); 
+  }
+  
+}
+
+#days, #years {
+  @include opacity(.2);
+  pointer-events: none;
+  &.active {
+    @include opacity(1);
+    pointer-events: auto;
+  }
+}
+
+tr {
+  @include border-bottom;
+}
+
+tr:last-child {
+  border: none;
+}
+
+thead {
+  th {
+    padding-bottom: .5em;
+  }
+  tr:last-child {
+    @include border-bottom;
+    
+  }
+}
+
+td {
+  a {
+    padding: .5em .2em;
+    display: inline-block;
+  }
+}
+
+.ui-datepicker-current-day {
+  background: #fff;
+  a {
+    background-color: #fff;
+    color: #000;
+    width: 1em;
+  }
+}
+
+.calendar-form {
+  @include flex(1);
+  display: inline-block;
+  @include border-right;
+  
+  &:last-child {
+    border: none;
+  }
+  select {
+    @include gutter-padding-top(1.2);
+    @include gutter-padding-bottom(.75);
+    width: 100%;
+    text-align: center;
+    text-align-last:center;
+    background: #000;
+    border: none;
+    color: #fff;
+  	@include font-size($h1-font-sizes); 
+  	@include line-height($h1-line-height); 
+    option {
+      text-align: center;
+      background: #000;
+      color: #fff;
+    	@include font-size($h1-font-sizes); 
+    	@include line-height($h1-line-height); 
+    }
+  }
+}
+
+.calendar-form-holder {
+  @include border-bottom;
+  @include flexbox;
+}
+
+.ui-select {
+  span {
+    display: none;
+  }
+}

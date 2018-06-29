@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="716px" height="480px" viewBox="0 0 716 480" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>landing_events1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landing_events1">
+            <g id="Group" fill="#000000" fill-rule="nonzero">
+                <path d="M238.1,479.1 L238.1,237 L0,237 L0,0 L716,0 L716,479.1 L238.1,479.1 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="Group" transform="translate(530.422900, 29.755300)" fill="#FFFFFF" font-family="Helvetica" font-size="40" font-weight="normal">
+                <text id="E">
+                    <tspan x="0" y="39">E</tspan>
+                </text>
+                <text id="v">
+                    <tspan x="26.4" y="39">v</tspan>
+                </text>
+                <text id="ents">
+                    <tspan x="48.7" y="39">ents</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

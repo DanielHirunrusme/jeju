@@ -1,0 +1,53 @@
+.gradient-overlay {
+  transition: .2s opacity;
+  transition-timing-function: linear;
+  mix-blend-mode: difference;
+  
+  .android & {
+    display: none !important;
+  }
+  
+  @include break(mobile) {
+    transition: 1s transform;
+    transition-timing-function: linear;
+    
+  }
+  .gradient-dim & {
+    @include opacity(.5);
+  }
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  //top: 0vh;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+  pointer-events: none;
+  
+  .gradient-gradient {
+    height:200vh;
+    width:100vw;
+    position: absolute;
+    bottom: -200vh;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 20%, rgba(255,255,255,1) 70%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 20%,rgba(255,255,255,1) 70%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 20%,rgba(255,255,255,1) 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    @include break(mobile) {
+      background: -moz-linear-gradient(top, rgba(255,255,255,0) 20%, rgba(255,255,255,1) 50%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(255,255,255,0) 20%,rgba(255,255,255,1) 50%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(255,255,255,0) 20%,rgba(255,255,255,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+      height: 200vh;
+      bottom: 0;
+    }
+  }
+  
+  .gradient-solid {
+    width:100vw;
+    height:100%;
+    //background-color: red;
+  }
+  
+}

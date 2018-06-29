@@ -1,0 +1,24 @@
+footer {
+  display: none;
+  @include break(mobile){
+    //@include border-top;
+    //@include border-bottom;
+    @include flexbox;
+    height: $mobile-header-height;
+    @include align-items(center);
+  }
+  .social {
+    margin-top: -.25em;
+  }
+  .MenuSearch {
+    @include gutter-padding-left(1);
+  }
+  .footer-link {
+    margin-left: 1em;
+  }
+  &.search-open {
+    .social, .footer-link {
+      display: none;
+    }
+  }
+}

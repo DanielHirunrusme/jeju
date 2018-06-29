@@ -1,0 +1,36 @@
+article {
+	
+  width: auto;
+  @include gutter-padding-left(1);
+  @include gutter-padding-top(1);
+	@include gutter-padding-bottom(1);
+  @include gutter-padding-right(1);
+  @include border-bottom;
+  
+  @include break(mobile){
+    &:last-child {
+      //border-bottom: none;
+    }
+  }
+  
+  .article-title {
+    margin: 0;
+  }
+  
+  figure {
+    img {
+      width: 50%;
+      margin-bottom: 1em;
+    }
+  }
+  
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+ 
+iframe {
+  width: 100%; 
+}

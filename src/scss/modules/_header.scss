@@ -1,0 +1,202 @@
+header {
+  //background: rgba(0, 0, 0, .9);
+  background: #000;
+  position:fixed;
+  left:0;
+  width:calc(100% - 6px);
+  top:0;
+  height: $desktop-header-height;
+  @include border-all;
+  z-index: 99999;
+  
+  @include break(mobile){
+    height: $mobile-header-height;
+    .languages, .social, .MenuSearch {
+      display: none;
+    }
+  }
+  
+  #home & {
+    .languages {
+      display: block;
+    }
+  }
+  
+  #RightNav {
+    @include break(mobile) {
+      display: none;
+    }
+  }
+  
+  .mobile-header {
+    margin: 0;
+    display: none;
+    @include break(mobile){
+      display: block;
+    }
+    .event-article &, .artist & {
+      display: none;
+    }
+    //margin-right: -.5em;
+    &.has-children {
+      margin-right: -.5em;
+      .artists &, .calendar &, .press & {
+        margin-right: 0;
+      }
+    }
+    br {
+      display: inline-block;
+      content: '';
+      margin: 0 .2em;
+    }
+    #home & {
+      display: none;
+    }
+    .arrow {
+      display: inline-block;
+      margin: 0 .5em;
+      .artists &, .calendar &, .press & {
+        display: none;
+      }
+      .aside-shown & {
+        @include transform(rotate(180deg));
+      }
+    }
+    
+  }
+  
+  .inner {
+    @include gutter-all;
+    @include flexbox;
+    @include align-items(center);
+    @include justify-content(space-between);
+    height: 100%;
+  }
+  
+  .home-link {
+    
+    width: 7.916vw;
+    margin: 0;
+    padding: 0;
+    margin-top: .5em;
+    @include break(mobile){
+      width: 19.6vw;
+      margin-top: .2em;
+    }
+    display: block;
+    
+    
+    img, svg {
+      width: 7.916vw;
+      height: auto;
+      @include break(mobile){
+        width: 19.6vw;
+      }
+      //height: 32px;
+    }
+  }
+}
+
+.languages {
+  display: inline-block;
+  white-space: nowrap;
+  margin-right: 1em;
+  margin-top: -.2em;
+  &:hover {
+    li {
+      display: inline-block;
+      margin-left: .5em;
+    }
+  }
+  li {
+    display: none;
+    &.active {
+      display: inline-block;
+    }
+    a {
+      @extend h1;
+      @include opacity(.5);
+      &:hover {
+        @include opacity(1);
+      }
+    }
+  
+    &:after {
+      //content:' ';
+      border-right: 1px solid rgba(255, 255, 255, .2);
+      height: .8em;
+      width:1px;
+      margin-top:.35em;
+      padding-right:.3em;
+      margin-right:.3em;
+      display: inline-block;
+    }
+  
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  
+    &.active {
+      a {
+        @include opacity(1);
+      }
+    }
+  }
+}
+
+
+.search-icon {
+  width: 1.8vw;
+  height: 1.8vw;
+  margin-right: 1em;
+  @include break(mobile){
+    width: 5vw;
+    height: 5vw;
+  }
+  svg {
+    width: 1.8vw;
+    height: 1.8vw;
+    @include break(mobile){
+      width: 5vw;
+      height: 5vw;
+    }
+    position: relative;
+    top: 1px;
+  }
+}
+
+.social {
+  display: inline-block;
+  li {
+    display: inline-block;
+    @extend h1;
+    margin-bottom: 0;
+    @include break(mobile){
+      line-height: 2.2;
+    }
+    i {
+      font-size: .7em;
+    }
+  }
+  img, svg {
+    width: 1.8vw;
+    height: 1.8vw;
+    position: relative;
+    top: .01em;
+    @include break(mobile){
+      width: 4vw;
+      height: 3.7vw;
+    }
+  }
+  svg {
+    width: 1.8vw;
+    height: 1.65vw;
+    margin-top: 1px;
+    @include break(mobile){
+      width: 4vw;
+      height: 3.7vw;
+    }
+  }
+}

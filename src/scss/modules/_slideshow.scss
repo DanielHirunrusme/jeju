@@ -1,0 +1,13 @@
+.section.slideshow {
+  .slideshow-item {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.slideshow-item {
+  &:hover {
+    cursor: url(images/arrow-right.png), auto;
+  }
+}

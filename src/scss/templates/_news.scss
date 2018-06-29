@@ -1,0 +1,14 @@
+.news {
+  h1.article-title {
+    margin-bottom: 0;
+  }
+  .article-date {
+    @extend %h1;
+  }
+  .wrap {
+    margin-left: $desktop-aside-width;
+    @include break(mobile){
+      margin-left: 0;
+    }
+  }
+}

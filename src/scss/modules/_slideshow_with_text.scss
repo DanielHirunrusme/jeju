@@ -1,0 +1,37 @@
+.section.slideshow_with_text {
+  .slideshow-item {
+    @include flexbox;
+    @include break(mobile){
+      @include flex-direction(column);
+    }
+  }
+  .slideshow-image {
+    width: 73.66%;
+    @include flex(0 0 73.66%);
+    @include border-right;
+    @include break(mobile){
+      width: 100%;
+      @include flex(0 0 100%);
+      border-right: none;
+    }
+    
+    img {
+      width: 100%;
+      @include border-bottom;
+    }
+  } 
+  .project-section-text {
+    @include gutter-padding-left(.5);
+    @include gutter-padding-right(.5);
+    @include gutter-padding-top(.8);
+    @include break(mobile){
+      @include gutter-padding-left(1);
+      @include gutter-padding-right(1);
+      @include gutter-padding-top(1);
+      @include gutter-padding-bottom(1);
+    }
+  }
+  img {
+    
+  }
+}
